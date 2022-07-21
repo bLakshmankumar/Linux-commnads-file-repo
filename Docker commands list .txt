@@ -1,0 +1,66 @@
+Docker log commands
+...................................................
+
+docker container logs --help                                     - To list the helping commands
+
+docker logs "container id"                                         - To check the specific container logs
+
+docker inspect --format={{.Logpath}} "container id"    - for check the specific path information
+
+grep error "resource name/id"                                   - we can get th error information about a specific resource 
+
+docker ps --filter="status=exited"                              - we can see only exited container information.
+
+docker ps --filter="status=stopped"                           - we can get the stopped state container information.
+
+docker logs --since 10  "containername/ID"               - we can get the all the logs/errors happened in last 10 min
+
+docker container logs --tail 2 "containername/ID"       - we can get the last 2 logs of a container
+
+docker container logs -t "containername/ID"              - we can get the container information with TimeStamp
+
+docker info                                                               - Executing the “info” command displays several pieces of information about the OS.
+
+docker events                                                          - we can get the container information 
+
+..........................................................................................................................................................................
+
+docker commands -:
+---------------------------
+
+docker --version                                                     - To get the docker version
+
+docker pull "image name"                                         - To download a docker image.
+
+docker build -t imagename:tag                                 -  To bulid an docker image
+
+docker run --name "containername"                         - To create a container
+ 
+docker ps                                                               - To get the docker running container information
+
+docker ps -a                                                           - To get the all docker container information (both running & Stopped state)
+
+docker images                                                        - To get list of  docker images
+
+docker inspect "containername/ID"                          - To  get the detailed information about container
+
+df -h                                                                       - to know the mount volume list
+
+docker start "containername/ID"                              - To start the container
+
+docker stop "containername/ID"                              - To stop the container
+
+docker rm "containername/ID"                                 - To containerremove the 
+
+docker rmi "imagename/id"                                      - To remove the docker image
+
+docker volume ls                                                     - To know the list volumes.
+
+docker prune                                                           - To remove all unused docker resources
+
+docker stats                                                            - To know the docker resourse information ( RAM, Memory, CPU, Swap & etc)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Git_Token   -   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
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
