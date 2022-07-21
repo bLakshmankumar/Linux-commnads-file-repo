@@ -328,7 +328,7 @@ Options:
 
 AWK COMMMANDS PATTERS	-:												   
 -----------------------------------------													 
-awk '{print}' file name                            - bdefault ayntax of awk command.
+awk '{print}' file name                            - default syntax of awk command.
 awk '/manager/ {print}' employee.txt      - Print the lines which match the given pattern. 								 
 awk '{print $1,$4}' employee.txt             - Splitting a Line Into Fields.
 awk '{print NR,$0}' employee.txt            - Use of NR built-in variables (Display Line Number)
