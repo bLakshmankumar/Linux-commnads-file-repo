@@ -136,7 +136,7 @@ ip -brief address                                         -  To list interfaces 
 
 ip route                                                  - To display the routing table, use
 
-ip addr add/del ip/mask dev interface     - To add/delete an ip address to an interface, use
+ip addr add/del ip/mask dev interface                      - To add/delete an ip address to an interface, use
 
 curl                                                       -  transferring data using various network protocols. (supports more protocols than wget)
  
@@ -291,8 +291,9 @@ Examples -: i execute a command called  (telnet localhost ) - we get an error bu
  Use pipes to run two commands consecutively.
  Helps in creating powerfull commands.     
  
- for ex i wanna see contant of last lines in a file how?           use pipeline symbol to get required result
-  cat filename | less or | pg or | more 
+ for ex i wanna see contant of last lines in a file how?   By using pipeline symbol to get required result
+ 
+                  # cat filename | less or | pg or | more 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
   LINUX WITH Grep Command -: Syntax (grep word name)
@@ -306,27 +307,27 @@ examples for grep command -:
 -------------------------------------
  i have a file with list of fruits o this file i wanna list only avocado fruits so how can i listout ?
  
- Syntax -:  cat fruits | grep avocado  ( once we execute this command it'll print our desired result)
-           cat fruits | grep -v avocado ( it'll print all lines except avocado)   ( simply it'll skip the matching words)
-		   cat fruits | grep -i avocado ( it'll print matching words of avocado)
-		   cat fruits | grep -c avocado ( it'll print  count of matching words)
-		   cat fruits | grep -n avocado ( it'll print matching words with line numbers) 
+ Syntax -:  cat filename | grep word          ( once we execute this command it'll print our desired result)
+            cat fruits | grep -v avocado      ( it'll print all lines except avocado)   ( simply it'll skip the matching words)
+            cat fruits | grep -i avocado      ( it'll print matching words of avocado)
+            cat fruits | grep -c avocado      ( it'll print  count of matching words)
+	    cat fruits | grep -n avocado      ( it'll print matching words with line numbers) 
  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
  LINUX WITH sort Command -:  (Syntax sort filename)
  --------------------------------------
  sort command ( sort command we are using for print the result in alphabetical order)
  
-            sort -r filename  - it'll print the result from last to first.
-			sort -n filename  - it'll sort the result numarically.
+            sort -r filename           - it'll print the result from last to first.
+	    sort -n filename           - it'll sort the result numarically.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 LINUX WITH AWKCommand -:  (Syntax-:  awk options 'selection _criteria {action }' input-file > output-file)
 -------------------------------------------------------------------------------------------------------------------------------------
 
-awk                                          - awk allows the users to use variables, numeric functions, string functions, and logical operators.
+awk                                     - awk allows the users to use variables, numeric functions, string functions, and logical operators.
 -------
-awk operations                               - first it'll scan the file line by line and spilts each input line into fields and compares input line/ fields to pattern, finally it performs the action on matched lines.
+awk operations                          - first it'll scan the file line by line and spilts each input line into fields and compares input line/ fields to pattern, finally it performs the action on matched lines.
 
 Options:  
 -----------
