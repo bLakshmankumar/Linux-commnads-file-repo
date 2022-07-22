@@ -1,157 +1,160 @@
 Linux Commands Cheat sheet
 -------------------------------------------------------
-init 0 (or) systemctl poweroff                  - It'll power of the system.
+init 0 (or) systemctl poweroff                      - It'll power of the system.
 
-init 6 (or) systemctl reboot                     - It'll reboot the system
+init 6 (or) systemctl reboot                        - It'll reboot the system
 
-date                                                      - To know the system date, year and time
+date                                                - To know the system date, year and time
 
-date +%d-%m-%y                                 - To know the exact date month and year
+date +%d-%m-%y                                      - To know the exact date month and year
 
-cal                                                        - To know the present month calander,            "cal 11 2018"    - To know the specific month and year calander,            "cal -3"   - To print last 3 months clander
+cal                                                 - To know the present month calander
 
-cat > file1                                              - To create a file then add some content and save with (contl +c). 
+"cal 11 2018"                                       - To know the specific month and year calender                                                                   
+"cal -3"                                            - To print last 3 months clander
+
+cat > file1                                          - To create a file then add some content and save with (contl +c). 
 
 cat filename(file1)                                  - To print the data inside a file1.
 
-cat -n filename(file1)                              - To Print a file with line numbers.
+cat -n filename(file1)                               - To Print a file with line numbers.
 
-ls (or)  ls -ltr   (or) ls -al                          - It'll list files and directories.
+ls (or)  ls -ltr   (or) ls -al                        - It'll list files and directories.
 
-ls *.txt (or) .sh                                       - It'll list only filtered files. ( for ex i wanna filter shell script files ( ls * .sh) -: it'll list only .sh files/extension with .sh
+ls *.txt (or) .sh                                     - It'll list only filtered files. ( for ex i wanna filter shell script files ( ls * .sh) -: it'll list only .sh files/extension with .sh
 
-ls -d                                                      - It'll print the current directory.
+ls -d                                                 - It'll print the current directory.
 
 ls -ld  dirname/*                                     -  It'll list the directory properties/details like when it'll create & etc.
 
-pwd                                                      - It'll print the present working directory.
+pwd                                                   - It'll print the present working directory.
 
-who am i                                               - It'll print the which user we are login.
+who am i                                              - It'll print the which user we are login.
 
-who                                                      -  It'll print all users list who all are login.
+who                                                   -  It'll print all users list who all are login.
 
-w                                                          - It'll print list all user list and load avarage, users list, when this system is up, when the user is login, how much he is using & etc.
+w                                                     - It'll print list all user list and load avarage, users list, when this system is up, when the user  is login, how much he is using & etc.
 
-uptime                                                  - It'll print the system uptime(when this system was started) and what is the current load avarage.
+uptime                                                - It'll print the system uptime(when this system was started) and what is the current load avarage.
 
-uname -a                                              - It'll print OS name(Linux/Unix), System name, Kernel Version, OS Type, type of Hardware(64 bit/32Bit).
+uname -a                                               - It'll print OS name(Linux/Unix), System name, Kernel Version, OS Type, type of Hardware(64 bit/32Bit).
 
-touch   filename                                    - we can create empty files,                            "touch file{1..200}.txt"    - we can create 200 files with this command like wise we create n number of files.
+touch   filename                                       - we can create empty files, "touch file{1..200}.txt"    - we can create 200 files with this command like wise we create n number of files.
 
-touch dirname/filename                         - It'll create a files on specific directory/filename{1..10}.txt - it'll create 10 files inside the directory.
+touch dirname/filename                                 - It'll create a files on specific directory/filename{1..10}.txt - it'll create 10 files inside the directory.
 
-ls -ltr dirname/*                                     - It'll list all the files inside that directory
+ls -ltr dirname/*                                      - It'll list all the files inside that directory
 
-rm -r dirname/*                                     - It'll remove all files inside that directory
+rm -r dirname/*                                        - It'll remove all files inside that directory
 
-cp sourcepath and destinationpath         - we copy files from one directory to another directory.
+cp sourcepath and destinationpath                      - we copy files from one directory to another directory.
 
-cp -R source dir path & Dest dir path     - It'll copy the directory from one directory to another directory.
+cp -R source dir path & Dest dir path                  - It'll copy the directory from one directory to another directory.
 
-mv filename(f1)  newfilename(m1)         - It'll change the file name (ex it'll change File name F1 to M1)
+mv filename(f1)  newfilename(m1)                       - It'll change the file name (ex it'll change File name F1 to M1)
  
-mkdir   Directory name                          - It'll create a directory 
+mkdir   Directory name                                 - It'll create a directory 
 
-mkdir -p 1/2/3/4/a/b/c                             - It'll create a multiple directories under a parent directory   (-p it's a parent directory)
+mkdir -p 1/2/3/4/a/b/c                                  - It'll create a multiple directories under a parent directory   (-p it's a parent directory)
 
-cd directory name                                  - We can change from one directory to another directory.
+cd directory name                                       - We can change from one directory to another directory.
 
-cd~                                                       - Brings you to the home directory
+cd~                                                     - Brings you to the home directory
 
-cd ..                                                      - Brings you to the previous directory
+cd ..                                                   - Brings you to the previous directory
 
-cd/                                                        - Takes you to the entire system’s root directory
+cd/                                                     - Takes you to the entire system’s root directory
 
-du -h  filename                                       - To find the file size
+du -h  filename                                         - To find the file size
 
-rmdir                                                     - It'll not delete the directory directly first it'll remind if any data available inside that directory. then deletion of the files only it'll delete the directory.
+rmdir                                                   - It'll not delete the directory directly first it'll remind if any data available inside that directory. then deletion of the files only it'll delete the directory.
 
-free                                                       - It'll print the memory and swap resource information.
+free                                                    - It'll print the memory and swap resource information.
 
 top / htop                                              - shows a real-time view of running processes in Linux and displays kernel-managed tasks.
 
-head                                                     - Displays the beginning of the file
+head                                                    - Displays the beginning of the file
 
-tail                                                        - Displays the last part of the file
+tail                                                    - Displays the last part of the file
 
-cat                                                       -  Concatenate files and print on the standard output.
+cat                                                     -  Concatenate files and print on the standard output.
 
 more                                                    -  Displays the content in pager form and is used to view the text in the terminal window one page or screen at a time.
 
-less                                                     -  Displays the content in pager form and allows backward and single line movement.
+less                                                    -  Displays the content in pager form and allows backward and single line movement.
 
-cat /proc/cpuinfo                                   - It prints the Cpu info.
+cat /proc/cpuinfo                                       - It prints the Cpu info.
 
-grep  "word"  "Filename"                       - search for a string in groups of files (To print any line from a file that contains a specific pattern of characters, in our case phoenix in the file sample2 ( grep phoenix sample2)
+grep  "word"  "Filename"                                - search for a string in groups of files (To print any line from a file that contains a specific pattern of characters, in our case phoenix in the file sample2 ( grep phoenix sample2)
 
-find                                                      - Find command used to search files, strings, and directories.
+find                                                    - Find command used to search files, strings, and directories.
 
-find / -type d -name Dirname                - Find Directories Using Name
+find / -type d -name Dirname                             - Find Directories Using Name
 
-find . -type f -name "*.sh"(extention)     -  Find all PHP Files in the Directory
+find . -type f -name "*.sh"(extention)                   -  Find all PHP Files in the Directory
 
-find . -type f -perm 0777 -print              - Find Files With 777 Permissions.
+find . -type f -perm 0777 -print                         - Find Files With 777 Permissions.
 
-find / -type f ! -perm 777                       - Find Files Without 777 Permissions
+find / -type f ! -perm 777                               - Find Files Without 777 Permissions
 
-find / -mtime 50                                    - Find Last 50 Days Modified Files
+find / -mtime 50                                         - Find Last 50 Days Modified Files
 
-find / -type f -size +100M -exec rm -f {} \;  -  Find and Delete 100MB Files.
+find / -type f -size +100M -exec rm -f {} \;             -  Find and Delete 100MB Files.
 
-# find / -type f -name *.mp3 -size +10M -exec rm {} \; - Find Specific Files and Delete
+# find / -type f -name *.mp3 -size +10M -exec rm {} \;   - Find Specific Files and Delete
 
-users                                                   - Users command displays currently logged-in users. This command doesn’t have other parameters other than help and version.
+users                                                    - Users command displays currently logged-in users. This command doesn’t have other parameters other than help and version.
 
-SSH Command (Secure Shell)              - SSH command is used to login into the remote host. For example, the below ssh command will connect to the remote host (192.168.50.2) using the user as Narad.(ssh narad@192.168.50.2)
+SSH Command (Secure Shell)                               - SSH command is used to login into the remote host. For example, the below ssh command will connect to the remote host (192.168.50.2) using the user as Narad.(ssh narad@192.168.50.2)
 
-Sort command                                      - The sort command is used to sort lines of text files in ascending order. with -r options will sort in descending order.
+Sort command                                             - The sort command is used to sort lines of text files in ascending order. with -r options will sort in descending order.
 
-Ftp or sftp Command()                          - ftp or sftp command is used to connect to remote ftp host. ftp is (file transfer protocol) and sftp is (secure file transfer protocol). For example, the below commands will connect to ftp host (192.168.50.2).
+Ftp or sftp Command()                                    - ftp or sftp command is used to connect to remote ftp host. ftp is (file transfer protocol) and sftp is (secure file transfer protocol). For example, the below commands will connect to ftp host (192.168.50.2).
 ex  (# ftp 192.168.50.2)
     (# sftp 192.168.50.2)
 	
-Systemctl command                             - Systemctl command is a systemd management tool that is used to manage services, check running statuses, start and enable services and work with the configuration files.
+Systemctl command                                        - Systemctl command is a systemd management tool that is used to manage services, check running statuses, start and enable services and work with the configuration files.
 ex  # systemctl start httpd.service
      # systemctl enable httpd.service
      # systemctl status httpd.service
 
-Tar Command                                      - The tar command is used to compress files and folders in Linux. For example, the below command will create an archive for /home directory with the file name archive-name.tar.
+Tar Command                                              - The tar command is used to compress files and folders in Linux. For example, the below command will create an archive for /home directory with the file name archive-name.tar.
 ex # tar -cvf archive-name.tar /home
 
-# tar -xvf archive-name.tar                    - To extract the tar archive file use the option as follows.
+# tar -xvf archive-name.tar                              - To extract the tar archive file use the option as follows.
 
-ps command                                         - The ps command displays processes running in the system. The below example show the init to process only.
+ps command                                               - The ps command displays processes running in the system. The below example show the init to process only.
 ex # ps -ef | grep init
 root  1  0  0 07:53 ?  00:00:04 /sbin/init
 root  7508 6825 0 11:48 pts/1 00:00:00 grep init
 
-kill command                                        -  Use the kill command to terminate the process. First, find process id with ps command
+kill command                                              -  Use the kill command to terminate the process. First, find process id with ps command
 
 fdisk -l                                                  - It'll list the attached disk resources information to the servers
 
-ip -brief address                                    -  To list interfaces with brief network layer info, use:
+ip -brief address                                         -  To list interfaces with brief network layer info, use:
 
-ip route                                                 - To display the routing table, use
+ip route                                                  - To display the routing table, use
 
 ip addr add/del ip/mask dev interface     - To add/delete an ip address to an interface, use
 
 curl                                                       -  transferring data using various network protocols. (supports more protocols than wget)
  
-systemctl                                              -  Managing Services (Daemons).
+systemctl                                                  -  Managing Services (Daemons).
 
 ps                                                          - it'll print the status of processes running for user.
 
-ps PID                                                   - gives the status of a perticular process.
+ps PID                                                      - gives the status of a perticular process.
 
-pidof "processname"                              - Gives the process id of a process.
+pidof "processname"                                        - Gives the process id of a process.
 
-kill PID                                                  - It'll kill the process.
+kill PID                                                   - It'll kill the process.
 
-nice                                                      - Starts a process with given priority.
+nice                                                       - Starts a process with given priority.
 
-renice                                                   - change an priority for already running process. (sudo renice 20 -p 3844)   (it'll change the old nice value and replace with new nice value)
+renice                                                     - change an priority for already running process. (sudo renice 20 -p 3844)   (it'll change the old nice value and replace with new nice value)
 
-df                                                          - Gives free hard disk space on our system.
+df                                                         - Gives free hard disk space on our system.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -160,89 +163,89 @@ Text Editors
 
 vi                                                        -  we create/edit the text file    - Saving Patter ( esc,shift:, w(save),q!)(esc,shift:,w,q!)
   
-vim                                                     -  we create/edit the text file    - Saving Patter ( esc,shift:, w(save),q!)(esc,shift:,w,q!)
+vim                                                       -  we create/edit the text file    - Saving Patter ( esc,shift:, w(save),q!)(esc,shift:,w,q!)
 
-nano                                                   - -  we create/edit the text file    - Saving Patter (cntl,x,y,enter)
-
+nano                                                      -  we create/edit the text file    - Saving Patter (cntl,x,y,enter)
+ 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Troubleshooting commands
 -----------------------------------
 
-Hostname                                          - To view the hostname (domain and IP address) of the machine and to set the hostname.
+Hostname                                              - To view the hostname (domain and IP address) of the machine and to set the hostname.
 
-Ping  (ex-: goohle.com)                      - To check if the remote server is reachable or not.
+Ping  (ex-: goohle.com)                               - To check if the remote server is reachable or not.
 
 ifconfig                                              - To display and manipulate route and network interfaces. It displays network configuration. ‘ip’ is the replacement of ifconfig command.
 
 netstat                                               - It displays network connections, routing tables, interface statistics. ‘ss’ is the replacement of netstat command which is used to get more information.
     
-Traceroute                                         - It is a network troubleshooting utility that is used to find the number of hops required for a particular packet to reach the destination.
+Traceroute                                            - It is a network troubleshooting utility that is used to find the number of hops required for a particular packet to reach the destination.
 
-Tracepath                                          - It is the same as traceroute with a difference that it does not require root privileges.
+Tracepath                                             - It is the same as traceroute with a difference that it does not require root privileges.
 
-Dig                                                    - This command is used to query the DNS name servers for any task related to the DNS lookup.
+Dig                                                   - This command is used to query the DNS name servers for any task related to the DNS lookup.
 
-nslookup                                           - To find DNS related query.
+nslookup                                              - To find DNS related query.
 
-Route                                                - It shows the details of the route table and manipulates the IP routing table.
+Route                                                 - It shows the details of the route table and manipulates the IP routing table.
 
 mtr                                                   - This command combines ping and track path into a single command.
 
-Ifplugstatus                                       - This command tells us whether the network cable is plugged in or not.
+Ifplugstatus                                          - This command tells us whether the network cable is plugged in or not.
 
-cd /etc/systemconfig                         - we can change the jenkins port number
+cd /etc/systemconfig                                  - we can change the jenkins port number
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 User permission commands
 -----------------------------------
 
-stat -c "%a" file_name                      - we can check the file’s permissions in the numeric notation using the stat command
+stat -c "%a" file_name                       - we can check the file’s permissions in the numeric notation using the stat command
 
-useradd username                           - To create a user
+useradd username                             - To create a user
 
-useradd -u UID username                 - To createa user with specific user ID ( useradd -u 1025 rahul) 
+useradd -u UID username                      - To createa user with specific user ID ( useradd -u 1025 rahul) 
 
-useradd -c "security dep" username  - We can create user with comment it'll help to identify the user department and purpose of cretaing thaat user.
+useradd -c "security dep" username           - We can create user with comment it'll help to identify the user department and purpose of cretaing thaat user.
 
-passwd                                            - To set a password to user
+passwd                                       - To set a password to user
+ 
+passwd -d 0(days) username                   - we can set the passwd  expairy date 
 
-passwd -d 0(days) username            - we can set the passwd  expairy date 
+useradd -e 2019-02-14 username               - Create a user with expairy date.
 
-useradd -e 2019-02-14 username      - Create a user with expairy date.
-
-useradd -e 2022-10-15 -f 22 username - user with passwd expairy date( this user passwd will work in 22 days only)
+useradd -e 2022-10-15 -f 22 username         - user with passwd expairy date( this user passwd will work in 22 days only)
 
 chage -l username                            - we can check the user complete datails (user account expairy date, passwd expairy date & etc)
 
-groupadd groupname                        - To create a group
+groupadd groupname                           - To create a group
 
-cat /etc/passwd                                - It has the all user details
+cat /etc/passwd                              - It has the all user details
 
-cat /etc/shadow                                - It has the user password details
+cat /etc/shadow                              - It has the user password details
 
-cat /etc/groups                                 - It has group details
+cat /etc/groups                              - It has group details
 
 usermod -a (addition) -G groupname username  - We can add existing user to group
 
-useradd -G groupname username     - we adding a user to existing group while we create a new user.
+useradd -G groupname username                - we adding a user to existing group while we create a new user.
 
-useradd -G gupname,grpname usrname   - we can add user in multiple groups
+useradd -G gupname,grpname usrname           - we can add user in multiple groups
 
-passwd -l username                         - It'll lock the user
+passwd -l username                           - It'll lock the user
 
-passwd -u username                        - It'll unlock the user
+passwd -u username                           - It'll unlock the user
 
-chown [user_name] [file_name]         -  To change the file ownership use the chown command.
+chown [user_name] [file_name]                -  To change the file ownership use the chown command.
 
-chgrp [group_name] [file_name]        - To change the group ownership type in the following command.
+chgrp [group_name] [file_name]               - To change the group ownership type in the following command.
 
-usermod -l newusername oldusername  -  It'll rename the user.
+usermod -l newusername oldusername           -  It'll rename the user.
 
 userdel -r username                         - It'll remove the user. if the user available in other groups it'll show an output.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-pr -n filename                                   - it'll print the file contant with numbers
+pr -n filename                              - it'll print the file contant with numbers
 ...................................................................................................................................................................................................................................................................................................................................................................
 
 Redirections in linux
