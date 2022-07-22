@@ -1,17 +1,17 @@
 Linux Commands Cheat sheet
 -------------------------------------------------------
-init 0 (or) systemctl poweroff                      - It'll power of the system.
+init 0 (or) systemctl poweroff                       - It'll power of the system.
 
-init 6 (or) systemctl reboot                        - It'll reboot the system
+init 6 (or) systemctl reboot                         - It'll reboot the system
 
-date                                                - To know the system date, year and time
+date                                                 - To know the system date, year and time
 
-date +%d-%m-%y                                      - To know the exact date month and year
+date +%d-%m-%y                                       - To know the exact date month and year
 
-cal                                                 - To know the present month calander
-
-"cal 11 2018"                                       - To know the specific month and year calender                                                                   
-"cal -3"                                            - To print last 3 months clander
+cal                                                  - To know the present month calander
+ 
+"cal 11 2018"                                        - To know the specific month and year calender                                                                   
+"cal -3"                                             - To print last 3 months clander
 
 cat > file1                                          - To create a file then add some content and save with (contl +c). 
 
