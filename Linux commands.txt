@@ -240,6 +240,11 @@ chown [user_name] [file_name]                -  To change the file ownership use
 
 chgrp [group_name] [file_name]               - To change the group ownership type in the following command.
 
+Usermod > we can change the user account details -:
+-------------------------------------------------
+usermod -d /data/projrct1 username           - changing the home directory.
+usermod -d /data/projrct1 -m username        - changing the home directory and move all content to new directory
+usermod -e 2023-05-25 username               - setting the account expairy date.
 usermod -l newusername oldusername           -  It'll rename the user.
 
 userdel -r username                         - It'll remove the user. if the user available in other groups it'll show an output.
