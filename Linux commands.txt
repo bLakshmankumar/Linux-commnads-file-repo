@@ -21,6 +21,8 @@ cat -n filename(file1)                               - To Print a file with line
 
 ls (or)  ls -ltr   (or) ls -al                        - It'll list files and directories.
 
+ls -a                                                 - It'll show all hideden files/directories
+
 ls *.txt (or) .sh                                     - It'll list only filtered files. ( for ex i wanna filter shell script files ( ls * .sh) -: it'll list only .sh files/extension with .sh
 
 ls -d                                                 - It'll print the current directory.
