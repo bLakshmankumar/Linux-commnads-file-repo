@@ -228,7 +228,7 @@ cat /etc/groups                              - It has group details
 
 usermod -a (addition) -G groupname username  - We can add existing user to group
 
-useradd -G groupname username                - we adding a user to existing group while we create a new user.
+useradd -G newgroupname username             - we adding a user to existing group while we create a new user.
 
 useradd -G gupname,grpname usrname           - we can add user in multiple groups
 
@@ -238,21 +238,41 @@ passwd -u username                           - It'll unlock the user
 
 chown [user_name] [file_name]                -  To change the file ownership use the chown command.
 
-chgrp [group_name] [file_name]               - To change the group ownership type in the following command.
+chgrp [group_name] [file_name]               - To change the group ownership use this command.
 
 Usermod > we can change the user account details -:
 -------------------------------------------------
 usermod -d /data/projrct1 username           - changing the home directory.
 usermod -d /data/projrct1 -m username        - changing the home directory and move all content to new directory
 usermod -e 2023-05-25 username               - setting the account expairy date.
-usermod -l newusername oldusername           -  It'll rename the user.
+usermod -l [newusername] [oldusername]       -  It'll rename the user.
 
 chage -l username                            - we can get all the account details of a user.
 
-userdel -r username                         - It'll remove the user. if the user available in other groups it'll show an output.
+userdel -r username                          - It'll remove the user. if the user available in other groups it'll show an output.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Group management-:
+------------------
+groups                                       - checking the group info for users.
+groups [username]                            - checking the groups of any user.
+...................................................................................
+groupadd-:
+----------
+groupadd [group_name]                         - To create a new group.
+cat /etc/group                                - To check the group details.
+-------------------------------------------------------------------------------------
+gpasswd-:
+---------
+gpasswd [group name]                          - To set a password to a group.
+gpasswd -a [username] [group name]            - To add a user into the group.
+gpasswd -a [user1,user2] [group name]         - to add multiple users into a group.
+gpasswd -d [username]  [group name]           - To remove a user from group.
+gpasswd -d [user1,user2] [group name]         - To remove multiple users from group. 
+groupdel [groupname]                          - To delete a group.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-pr -n filename                              - it'll print the file contant with numbers
+pr -n filename                               - it'll print the file contant with numbers
 ...................................................................................................................................................................................................................................................................................................................................................................
 
 Redirections in linux
