@@ -176,7 +176,7 @@ Hostname                                              - To view the hostname (do
 
 Ping  (ex-: goohle.com)                               - To check if the remote server is reachable or not.
 
-ifconfig                                              - To display and manipulate route and network interfaces. It displays network configuration. ‘ip’ is the replacement of ifconfig command.
+ifconfig                                              - It'll print details of active network interfaces.
 
 netstat                                               - It displays network connections, routing tables, interface statistics. ‘ss’ is the replacement of netstat command which is used to get more information.
     
