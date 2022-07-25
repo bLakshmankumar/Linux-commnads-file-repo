@@ -335,6 +335,7 @@ examples for grep command -:
  
  Syntax -:  cat filename | grep word          ( once we execute this command it'll print our desired result)
             cat fruits | grep -v avocado      ( it'll print all lines except avocado)   ( simply it'll skip the matching words)
+	    grep -n  word filename            ( It'll print the word with line numbers)
             cat fruits | grep -i avocado      ( it'll print matching words of avocado)
             cat fruits | grep -c avocado      ( it'll print  count of matching words)
 	    cat fruits | grep -n avocado      ( it'll print matching words with line numbers) 
