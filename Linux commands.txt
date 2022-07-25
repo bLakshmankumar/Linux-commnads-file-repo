@@ -197,6 +197,8 @@ mtr                                                   - This command combines pi
 Ifplugstatus                                          - This command tells us whether the network cable is plugged in or not.
 
 cd /etc/systemconfig                                  - we can change the jenkins port number
+
+cat /etc/shells                                       - we can chekck the all shell types
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 User permission commands
