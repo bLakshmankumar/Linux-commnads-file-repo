@@ -199,6 +199,8 @@ Ifplugstatus                                          - This command tells us wh
 sudo nano /etc/default/jenkins                        - we can change the jenkins port number
 
 cat /etc/shells                                       - we can chekck the all shell types
+
+last                                                  - The last command in Linux is used to display the list of all the users logged in and out since the                                                         file /var/log/wtmp was created.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 User permission commands
