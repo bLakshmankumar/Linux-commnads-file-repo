@@ -1,3 +1,32 @@
+DockerFile Commands-:
+------------------------
+FROM                          - FROM is used to define the base image to start the build process. Every Dockerfile must start with the FROM instruction.
+
+ENV                           - This command used to set the environment variables that is required to run the project.
+                                 (ENV sets the environment variables, which can be used in the Dockerfile and any scripts that it calls. These are                                           persistent with the container too and they can be referenced at any time).
+                                 
+
+WORKDIR                       - WORKDIR tells Docker that the rest of the commands will be run in the context of the /app folder inside the image.
+
+ENTRYPOINT                    - ENTRYPOINT has two forms:
+                                  ENTRYPOINT ["executable", "param1", "param2"] (exec form, preferred)
+                                  ENTRYPOINT command param1 param2 (shell form)
+                                  An ENTRYPOINT allows you to configure a container that will run as an executable.
+                                  
+
+CMD                             - The main purpose of a CMD is to provide defaults when executing a container. These will be executed after the entry                                         point. In Dockerfiles, you can define CMD defaults that include an executable.
+
+
+COPY                            - The COPY command is used to copy one or many local files or folders from source and adds them to the filesystem of the                                     containers at the destination path.
+
+
+ADD                             - The ADD command is used to add one or many local files or folders from the source and adds them to the filesystem of the                                   containers at the destination path.
+
+RUN                             - The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The                                       resulting committed image will be used for the next step in the Dockerfile. The RUN command runs within the container at                                   build time.
+
+EXPOSE                          - The EXPOSE command informs the Docker that the container listens on the specified network ports at runtime. You can                                         specify whether the port listens on TCP or UDP, and the default is TCP if the protocol is not specified.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Docker log commands
 ...................................................
 
