@@ -92,6 +92,18 @@ docker stats                                                            - To kno
 docker search imagename(ex-: postgrees)                            - it'll search and it'll list the availble images on that name
 
 docker pull imagename:version                                    - it'll download the image to our local machine
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Docker Exec Multiple Commands-:
+-------------------------------
+docker exec <container> bash -c "command1 ; command2 ; command3"   >  docker exec 74f86665f0fd bash -c "cd /var/log ; cat dmesg "
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Set Environment Variables-:
+----------------------------
+In order to set environment variables, execute “docker exec” with the “-e” option and specify the environment variable name and value next to it.
+
+$ docker exec -e var='value' <container> <command>          >  docker exec -e UID='myuser' 74f86665f0fd printenv UID
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
