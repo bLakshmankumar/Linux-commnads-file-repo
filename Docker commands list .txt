@@ -1,27 +1,61 @@
+DockerFile Commands-:
+------------------------
+FROM                          - FROM is used to define the base image to start the build process. Every Dockerfile must start with the FROM instruction.
+
+ENV                           - This command used to set the environment variables that is required to run the project.(ENV sets the environment variables, which can be used in the Dockerfile and any scripts that it calls. These are persistent with the container too and they can be referenced at any time).
+                                 
+
+WORKDIR                       - WORKDIR tells Docker that the rest of the commands will be run in the context of the /app folder inside the image.
+
+ENTRYPOINT                    - ENTRYPOINT has two forms:
+                                  ENTRYPOINT ["executable", "param1", "param2"] (exec form, preferred)
+                                  ENTRYPOINT command param1 param2 (shell form)
+                                  An ENTRYPOINT allows you to configure a container that will run as an executable.
+                                  
+
+CMD                             - The main purpose of a CMD is to provide defaults when executing a container. These will be executed after the entry                                         point. In Dockerfiles, you can define CMD defaults that include an executable.
+                                  NOTE: There can only be one CMD instruction in a Dockerfile. If you want to list more than one CMD, then only the last                                     CMD will take effect. "CMD will be overridden when running the container with alternative arguments".
+
+
+COPY                            - The COPY command is used to copy one or many local files or folders from source and adds them to the filesystem of the                                     containers at the destination path.
+
+
+ADD                             - The ADD command is used to add one or many local files or folders from the source and adds them to the filesystem of the                                   containers at the destination path.
+
+RUN                             - The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The                                       resulting committed image will be used for the next step in the Dockerfile. The RUN command runs within the container at                                   build time.
+
+EXPOSE                          - The EXPOSE command informs the Docker that the container listens on the specified network ports at runtime. You can                                         specify whether the port listens on TCP or UDP, and the default is TCP if the protocol is not specified.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Docker log commands
 ...................................................
 
 docker container logs --help                                     - To list the helping commands
 
-docker logs "container id"                                         - To check the specific container logs
+docker logs "container id"                                       - To check the specific container logs
 
-docker inspect --format={{.Logpath}} "container id"    - for check the specific path information
+docker logs --since 2019-10-20T10:00:00 <container_id>           -  View Docker logs since a specific date
+ 
+docker logs --tail 100 4921d714d338                              - in order to show 100 lines from your container for Docker logs
 
-grep error "resource name/id"                                   - we can get th error information about a specific resource 
+docker inspect --format={{.Logpath}} "container id"              - for check the specific path information
 
-docker ps --filter="status=exited"                              - we can see only exited container information.
+grep error "resource name/id"                                    - we can get th error information about a specific resource 
 
-docker ps --filter="status=stopped"                           - we can get the stopped state container information.
+docker ps --filter="status=exited"                               - we can see only exited container information.
 
-docker logs --since 10  "containername/ID"               - we can get the all the logs/errors happened in last 10 min
+docker ps --filter="status=stopped"                              - we can get the stopped state container information.
 
-docker container logs --tail 2 "containername/ID"       - we can get the last 2 logs of a container
+docker logs --since 10  "containername/ID"                       - we can get the all the logs/errors happened in last 10 min
 
-docker container logs -t "containername/ID"              - we can get the container information with TimeStamp
+docker container logs --tail 2 "containername/ID"                - we can get the last 2 logs of a container
 
-docker info                                                               - Executing the “info” command displays several pieces of information about the OS.
+docker container logs -t "containername/ID"                       - we can get the container information with TimeStamp
 
-docker events                                                          - we can get the container information 
+docker info                                                       - Executing the “info” command displays several pieces of information about the OS.
+
+docker events                                                     - we can get the container information 
+
 
 ..........................................................................................................................................................................
 
@@ -60,7 +94,21 @@ docker prune                                                           - To remo
 
 docker stats                                                            - To know the docker resourse information ( RAM, Memory, CPU, Swap & etc)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Git_Token   -   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
+docker search imagename(ex-: postgrees)                            - it'll search and it'll list the availble images on that name
+
+docker pull imagename:version                                    - it'll download the image to our local machine
+
+Docker Exec Multiple Commands-:
+-------------------------------
+docker exec <container> bash -c "command1 ; command2 ; command3"   >  docker exec 74f86665f0fd bash -c "cd /var/log ; cat dmesg "
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Set Environment Variables-:
+----------------------------
+In order to set environment variables, execute “docker exec” with the “-e” option and specify the environment variable name and value next to it.
+
+$ docker exec -e var='value' <container> <command>          >  docker exec -e UID='myuser' 74f86665f0fd printenv UID
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
