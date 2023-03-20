@@ -1,5 +1,10 @@
 Linux Commands Cheat sheet
--------------------------------------------------------
+---------------------------
+if you wanna copy a file from ec2 to local machine -: (execute this command on your local linux machine)
+--------------------------------------------------------------------------------------------------------
+sudo sftp -i /home/oem/Downloads/.pem ec2-user@ip-of-ec2-server(pub) >  then sftp> ls(do ls), and go to your file path and do (get kibana.yml(filename).
+It'll download to local machine.
+
 init 0 (or) systemctl poweroff                       - It'll power of the system.
 
 init 6 (or) systemctl reboot                         - It'll reboot the system
