@@ -32,7 +32,13 @@ ls *.txt (or) .sh                                     - It'll list only filtered
 
 ls -d                                                 - It'll print the current directory.
 
-ls -ld  dirname/*                                     -  It'll list the directory properties/details like when it'll create & etc.
+ls -ld  dirname/*                                     - It'll list the directory properties/details like when it'll create & etc.
+
+ls -i                                                 - To display all files including inode number.
+
+[ i-node is the address of location where file attributes are stored. File attributes includes -: The size of the file, The num of links to the file, Owner name, group name, creation time, last modified time].
+
+ls -ltri                                              - To get all the information of the directories and files on that specific path includes inode num.
 
 pwd                                                   - It'll print the present working directory.
 
