@@ -72,6 +72,10 @@ mkdir   Directory name                                 - It'll create a director
 
 mkdir -p 1/2/3/4/a/b/c                                  - It'll create a multiple directories under a parent directory   (-p it's a parent directory)
 
+mkdir -p heros/{ntr,charan,pawan,nikhil}/{jan,feb,mar,apr,may,jun,july,aug,sep,oct,nov,dec}_202{2,3,4}  -: it'll create a heros directory, then inside heros dir it'll create a each hero dir and inside each hero dir it'll create their shedule calender year dir with years. here we try to create a directory for each hero year shedule. execute this command and verify with tree heros command and we can able to see each hero seperate directories for one year easily. 
+
+tree heros                                              - To list all directories and files inside a specific directory.
+
 cd directory name                                       - We can change from one directory to another directory.
 
 cd~                                                     - Brings you to the home directory
