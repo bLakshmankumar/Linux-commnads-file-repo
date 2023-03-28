@@ -40,6 +40,8 @@ ls -i                                                 - To display all files inc
 
 ls -ltri                                              - To get all the information of the directories and files on that specific path includes inode num.
 
+ls -l /etc | wc -l                                     - to get the file and folder count inside a etc directory.
+
 pwd                                                   - It'll print the present working directory.
 
 who am i                                              - It'll print the which user we are login.
