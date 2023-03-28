@@ -395,4 +395,3 @@ SED COMMMANDS PATTERS	-:
 sed '30,40 s/version/story/g' filename              - Replacing words or characters inside a range
 sed -i'.orig' 's/this/that/gi' filename             - In-place editing and backing up original file
 									   
-
