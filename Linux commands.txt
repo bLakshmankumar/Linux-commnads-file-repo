@@ -72,7 +72,15 @@ mkdir   Directory name                                 - It'll create a director
 
 mkdir -p 1/2/3/4/a/b/c                                  - It'll create a multiple directories under a parent directory   (-p it's a parent directory)
 
-mkdir -p heros/{ntr,charan,pawan,nikhil}/{jan,feb,mar,apr,may,jun,july,aug,sep,oct,nov,dec}_202{2,3,4}  -: it'll create a heros directory, then inside heros dir it'll create a each hero dir and inside each hero dir it'll create their shedule calender year dir with years. here we try to create a directory for each hero year shedule. execute this command and verify with tree heros command and we can able to see each hero seperate directories for one year easily. 
+mkdir -p heros/{ntr,charan,pawan,nikhil}/{jan,feb,mar,apr,may,jun,july,aug,sep,oct,nov,dec}_202{2,3,4}  -:
+
+> it'll create a heros directory, then inside heros dir it'll create a each hero dir and inside each hero dir it'll create their shedule calender year dir with years. here we try to create a directory for each hero year shedule. execute this command and verify with tree heros command and we can able to see each hero seperate directories for one year easily. 
+
+> now inside every directory i wanna create a file like shedule1.txt shedule2.txt on each hero month directories and each month has 30-31 days so each month i need to create a 30-31 files like that i need to create for 1 year so how can we create those many files for each hero with a single command.
+
+> How can we do is just add the /schedule_{1..31}.txt   -: it'll add the each day file to each hero monthly shedule directory 
+
+> touch heros/{ntr,charan,pawan,nikhil}/{jan,feb,mar,apr,may,jun,july,aug,sep,oct,nov,dec}_202{2,3,4}/schedule_{1..31}.txt -: the directories are already available so now we need to create a files inside each hero month dir for that we need to use the touch command to create a files inside those directories. let's execute this above command to create a files inside a each dir and verify with tree heros command.
 
 tree heros                                              - To list all directories and files inside a specific directory.
 
