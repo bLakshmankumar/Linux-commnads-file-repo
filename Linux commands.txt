@@ -413,5 +413,13 @@ How do you find all files that were modified in the last 7 days ?  :  find /path
 How do you find files based on their permissions ? 	 	   :  find /path/to/directory -perm 644
 How do you create a symbolic link to a file ?	        	   :  ln -s /path/to/original /path/to/link
 How do you check the list of installed packages on a Debian-based system ? : dpkg -l
-How to Uninstall a Package on a Debian-Based System ? 	 	   : sudo apt remove package_name [This command will remove the specified package but will keep the configuration files intact] (OR) sudo apt purge package_name (This command will remove the package and its associated configuration files). 
+How to Uninstall a Package on a Debian-Based System ? 	 	   : sudo apt remove package_name [This command will remove the specified package but will keep the configuration files intact] (OR) sudo apt purge package_name (This command will remove the package and its associated configuration files).
+How to Check the List of Installed Packages on a Redhat-Based System ? 
+   List All Installed Packages using "yum"
+      > yum list installed
+   List All Installed Packages using "dnf" (The dnf command is the default package manager for newer versions of Redhat-based systems (RHEL 8 and later)
+      > dnf list installed
+   List All Installed Packages using "rpm"
+      > rpm -qa --info (This command will list all installed packages along with detailed information about each package)
+
 									   
